@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		2D96FF22227635B500E4B218 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D96FF21227635B500E4B218 /* AppDelegate.swift */; };
-		2D96FF24227635B500E4B218 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D96FF23227635B500E4B218 /* art.scnassets */; };
 		2D96FF26227635B500E4B218 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D96FF25227635B500E4B218 /* ViewController.swift */; };
 		2D96FF29227635B500E4B218 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D96FF27227635B500E4B218 /* Main.storyboard */; };
 		2D96FF2B227635B600E4B218 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D96FF2A227635B600E4B218 /* Assets.xcassets */; };
 		2D96FF2E227635B600E4B218 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D96FF2C227635B600E4B218 /* LaunchScreen.storyboard */; };
+		2D96FF3622763DDF00E4B218 /* Scientist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D96FF3522763DDF00E4B218 /* Scientist.swift */; };
+		2DFA14C8227664F100621DA4 /* scientists.json in Resources */ = {isa = PBXBuildFile; fileRef = 2DFA14C7227664F100621DA4 /* scientists.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2D96FF1E227635B500E4B218 /* SpotTheScientist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotTheScientist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D96FF21227635B500E4B218 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2D96FF23227635B500E4B218 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		2D96FF25227635B500E4B218 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2D96FF28227635B500E4B218 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D96FF2A227635B600E4B218 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D96FF2D227635B600E4B218 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D96FF2F227635B600E4B218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D96FF3522763DDF00E4B218 /* Scientist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scientist.swift; sourceTree = "<group>"; };
+		2DFA14C7227664F100621DA4 /* scientists.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = scientists.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				2D96FF21227635B500E4B218 /* AppDelegate.swift */,
-				2D96FF23227635B500E4B218 /* art.scnassets */,
 				2D96FF25227635B500E4B218 /* ViewController.swift */,
+				2D96FF3522763DDF00E4B218 /* Scientist.swift */,
 				2D96FF27227635B500E4B218 /* Main.storyboard */,
 				2D96FF2A227635B600E4B218 /* Assets.xcassets */,
 				2D96FF2C227635B600E4B218 /* LaunchScreen.storyboard */,
 				2D96FF2F227635B600E4B218 /* Info.plist */,
+				2DFA14C7227664F100621DA4 /* scientists.json */,
 			);
 			path = SpotTheScientist;
 			sourceTree = "<group>";
@@ -125,7 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D96FF24227635B500E4B218 /* art.scnassets in Resources */,
+				2DFA14C8227664F100621DA4 /* scientists.json in Resources */,
 				2D96FF2E227635B600E4B218 /* LaunchScreen.storyboard in Resources */,
 				2D96FF2B227635B600E4B218 /* Assets.xcassets in Resources */,
 				2D96FF29227635B500E4B218 /* Main.storyboard in Resources */,
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D96FF26227635B500E4B218 /* ViewController.swift in Sources */,
+				2D96FF3622763DDF00E4B218 /* Scientist.swift in Sources */,
 				2D96FF22227635B500E4B218 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
