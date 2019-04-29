@@ -13,7 +13,7 @@
 		2D96FF2B227635B600E4B218 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D96FF2A227635B600E4B218 /* Assets.xcassets */; };
 		2D96FF2E227635B600E4B218 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D96FF2C227635B600E4B218 /* LaunchScreen.storyboard */; };
 		2D96FF3622763DDF00E4B218 /* Scientist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D96FF3522763DDF00E4B218 /* Scientist.swift */; };
-		2DFA14C8227664F100621DA4 /* scientists.json in Resources */ = {isa = PBXBuildFile; fileRef = 2DFA14C7227664F100621DA4 /* scientists.json */; };
+		2DB64E7722766ADB00FD9533 /* scientists.json in Resources */ = {isa = PBXBuildFile; fileRef = 2DB64E7622766ADB00FD9533 /* scientists.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		2D96FF2D227635B600E4B218 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D96FF2F227635B600E4B218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D96FF3522763DDF00E4B218 /* Scientist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scientist.swift; sourceTree = "<group>"; };
-		2DFA14C7227664F100621DA4 /* scientists.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = scientists.json; sourceTree = "<group>"; };
+		2DB64E7622766ADB00FD9533 /* scientists.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = scientists.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +65,7 @@
 				2D96FF2A227635B600E4B218 /* Assets.xcassets */,
 				2D96FF2C227635B600E4B218 /* LaunchScreen.storyboard */,
 				2D96FF2F227635B600E4B218 /* Info.plist */,
-				2DFA14C7227664F100621DA4 /* scientists.json */,
+				2DB64E7622766ADB00FD9533 /* scientists.json */,
 			);
 			path = SpotTheScientist;
 			sourceTree = "<group>";
@@ -128,7 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DFA14C8227664F100621DA4 /* scientists.json in Resources */,
+				2DB64E7722766ADB00FD9533 /* scientists.json in Resources */,
 				2D96FF2E227635B600E4B218 /* LaunchScreen.storyboard in Resources */,
 				2D96FF2B227635B600E4B218 /* Assets.xcassets in Resources */,
 				2D96FF29227635B500E4B218 /* Main.storyboard in Resources */,

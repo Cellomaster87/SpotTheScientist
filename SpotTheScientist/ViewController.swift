@@ -29,11 +29,11 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let configuration = ARImageTrackingConfiguration()
         
         guard let trackingImages = ARReferenceImage.referenceImages(inGroupNamed: "scientists", bundle: nil) else {
-            fatalError("Couldn't load tracking image")
+            fatalError("Couldn't load tracking images")
         }
         
         configuration.trackingImages = trackingImages
-
+        
         // Run the view's session
         sceneView.session.run(configuration)
     }
@@ -50,7 +50,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         guard let name = imageAnchor.referenceImage.name else { return nil }
         guard let scientist = scientists[name] else { return nil }
         
-        // make a 2D plane and place it in the scene and color it clear
         let plane = SCNPlane(width: imageAnchor.referenceImage.physicalSize.width, height: imageAnchor.referenceImage.physicalSize.height)
         plane.firstMaterial?.diffuse.contents = UIColor.clear
         
@@ -62,7 +61,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         let spacing: Float = 0.005
         
-        // Add the title
         let titleNode = textNode(scientist.name, font: UIFont.boldSystemFont(ofSize: 10))
         titleNode.pivotOnTopLeft()
         
@@ -71,13 +69,11 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         planeNode.addChildNode(titleNode)
         
-        // Add the bio
         let bioNode = textNode(scientist.bio, font: UIFont.systemFont(ofSize: 4), maxWidth: 100)
         bioNode.pivotOnTopLeft()
         
         bioNode.position.x += Float(plane.width / 2) + spacing
         bioNode.position.y = titleNode.position.y - titleNode.height - spacing
-        
         planeNode.addChildNode(bioNode)
         
         let flag = SCNPlane(width: imageAnchor.referenceImage.physicalSize.width, height: imageAnchor.referenceImage.physicalSize.width / 8 * 5)
@@ -129,21 +125,17 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 }
 
 extension SCNNode {
-    var width: Float {
-        return (boundingBox.max.x - boundingBox.min.x) * scale.x
-    }
-    
     var height: Float {
         return (boundingBox.max.y - boundingBox.min.y) * scale.y
     }
     
     func pivotOnTopLeft() {
         let (min, max) = boundingBox
-        pivot = SCNMatrix4MakeTranslation(min.x, (max.y - min.y) + min.y, 0)
+        pivot = SCNMatrix4MakeTranslation(min.x, max.y, 0)
     }
     
     func pivotOnTopCenter() {
-        let (min, max) = boundingBox
-        pivot = SCNMatrix4MakeTranslation((max.x - min.x) / 2 + min.x, (max.y - min.y) + min.y, 0)
+        let (_, max) = boundingBox
+        pivot = SCNMatrix4MakeTranslation(0, max.y, 0)
     }
 }
